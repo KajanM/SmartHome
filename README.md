@@ -1,10 +1,10 @@
-Smart Home
+Implementation of home automation system.
 
 CS2982 | Automation Challenge - II
 CS3252 | Industrial Computer Engineering
 
 ---------------------------------------------------------------------------------------
-Implementation of home automation system.
+Smart Home
 ---------------------------------------------------------------------------------------
 
 1. Allows the user to communicate with his home through a web application.
