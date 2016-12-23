@@ -60,7 +60,7 @@ void updateLEDStatus() {
 		// turn OFF the LED
 		digitalWrite(ledPin, LOW);
 
-		system("curl 'http://api.pushingbox.com/pushingbox?devid=vD7EBD6FDA4EB433' > /dev/ttyGS0");
+		system("curl 'http://api.pushingbox.com/pushingbox?devid=xxxxxxxxxxxxxx' > /dev/ttyGS0");
 	}
 	else
 	{
