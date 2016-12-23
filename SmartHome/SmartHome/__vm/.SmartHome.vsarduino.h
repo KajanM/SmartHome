@@ -84,4 +84,8 @@ extern "C" void __cxa_pure_virtual() {;}
 #undef cli
 #define cli()
 #include "SmartHome.ino"
+#include "Keypad.ino"
+#include "PIR.ino"
+#include "Relay.ino"
+#include "Temperature.ino"
 #endif

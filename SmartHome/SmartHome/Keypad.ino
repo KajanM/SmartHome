@@ -1,5 +1,6 @@
-#include <Arduino.h>
 #include <Keypad.h>
+#include <Arduino.h>
+
 enum SYSTEM_STATUS {
 	LOCKED, // 0
 	UNLOCKED, // 1
@@ -35,7 +36,7 @@ void setup() {
 void loop() {
 	// reading the keyboard
 	char key = keypad.getKey();
-	// if it’s a valid key
+	// if it’s a valid key  
 	if (key) {
 		if ((key != '#') && (key != '*'))
 		{
@@ -57,7 +58,9 @@ void updateLEDStatus() {
 		currentStatus = UNLOCKED;
 		Serial.println("SYSTEM UNLOCKED");
 		// turn OFF the LED
-		digitalWrite(ledPin, LOW);		
+		digitalWrite(ledPin, LOW);
+
+		system("curl 'http://api.pushingbox.com/pushingbox?devid=vD7EBD6FDA4EB433' > /dev/ttyGS0");
 	}
 	else
 	{
@@ -97,5 +100,4 @@ void handleKey(KeypadEvent key) {
 		break;
 	}
 }
-
 

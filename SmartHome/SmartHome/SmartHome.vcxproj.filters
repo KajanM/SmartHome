@@ -16,6 +16,10 @@
   </ItemGroup>
   <ItemGroup>
     <None Include="SmartHome.ino" />
+    <None Include="PIR.ino" />
+    <None Include="Keypad.ino" />
+    <None Include="Temperature.ino" />
+    <None Include="Relay.ino" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="__vm\.SmartHome.vsarduino.h">
